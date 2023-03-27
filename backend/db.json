@@ -1,0 +1,173 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Funny Cat Video",
+      "url": "https://www.youtube.com/embed/0Bmhjf0rKe8",
+      "buckets": 2
+    },
+    {
+      "id": 2,
+      "name": "Movie Trailer",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "bucketId": 2
+    },
+    {
+      "id": 3,
+      "name": "tree",
+      "url": "https://google.com",
+      "bucketId": 2
+    },
+    {
+      "id": 4,
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "bucketId": 3
+    },
+    {
+      "name": "code with harry",
+      "url": "https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
+      "bucketId": 4,
+      "id": 6
+    },
+    {
+      "name": "Block Chain",
+      "url": "https://www.youtube.com/",
+      "bucketId": 6,
+      "id": 8
+    },
+    {
+      "name": "React Native",
+      "url": "https://virengirigoswami.netlify.app/",
+      "bucketId": 3,
+      "id": 9
+    }
+  ],
+  "history": [
+    {
+      "name": "Movie Trailer",
+      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "date": "26-3-2023",
+      "time": "23:38",
+      "fulltime": 1679854111049,
+      "userId": 2,
+      "id": 22
+    },
+    {
+      "name": "code with harry",
+      "url": "https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=1",
+      "date": "27-3-2023",
+      "time": "0:28",
+      "fulltime": 1679857135004,
+      "userId": 3,
+      "id": 23
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "11:39",
+      "fulltime": 1679897376961,
+      "userId": "1",
+      "id": 34
+    },
+    {
+      "name": "React Native",
+      "url": "https://virengirigoswami.netlify.app/",
+      "date": "27-3-2023",
+      "time": "11:39",
+      "fulltime": 1679897381505,
+      "userId": "1",
+      "id": 35
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "12:0",
+      "fulltime": 1679898645127,
+      "userId": "1",
+      "id": 36
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "12:50",
+      "fulltime": 1679901645932,
+      "userId": "1",
+      "id": 37
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "15:52",
+      "fulltime": 1679912575631,
+      "userId": "1",
+      "id": 38
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "16:37",
+      "fulltime": 1679915227733,
+      "userId": "1",
+      "id": 39
+    },
+    {
+      "name": "History Lesson",
+      "url": "https://www.youtube.com/embed/XbGs_qK2PQA",
+      "date": "27-3-2023",
+      "time": "18:28",
+      "fulltime": 1679921937229,
+      "userId": "1",
+      "id": 40
+    }
+  ],
+  "buckets": [
+    {
+      "id": 2,
+      "name": "Entertainment Videos",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Education Videos",
+      "userId": 1
+    },
+    {
+      "name": "web devlopment",
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "name": "bockchain",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "name": "react native",
+      "userId": "1",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "virengiri",
+      "password": "viren"
+    },
+    {
+      "username": "tejash",
+      "password": "kt",
+      "id": 2
+    },
+    {
+      "username": "bhargav",
+      "password": "bg",
+      "id": 3
+    }
+  ]
+}

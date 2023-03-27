@@ -1,0 +1,100 @@
+@media  (max-width:650px){
+    .navbar{
+        height: unset;
+        padding-top: 0;
+        overflow: hidden;
+    }
+    .navbar ul{
+        padding-top: 100px;
+        padding-bottom: 5px;
+    }
+    .navbar .logo a{
+        font-size: 1.5rem;
+    }
+    .bucket-section #buckettop {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 0px;
+    }
+    .bucket-section #buckettop #createbtn {
+        position: relative;
+        right: unset;
+    }
+    .bucket-name #deletebtn {
+        
+        right: 5px;
+        scale: .5;
+    }
+    .bucket-section #bottom .bucket-list {
+        overflow: hidden;
+        width: calc(100% - 20px);
+    }
+    .Cardheading{
+        overflow: hidden;
+    }
+    .Cardheading .createbtn{
+        position: relative;
+        right: 0;
+    }
+    .afterhead{
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+    }
+    #cardsdelete{
+        margin-top: 10px !important;
+    }
+    #addmedia{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 20px !important;
+    }
+}
+@media (max-width:1000px){
+    .history-section #bottom .history-list .history-name{
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        padding-bottom: 10px;
+        overflow: hidden;
+        height: 120px;
+    }
+    .history-list .history-name .link{
+        position: relative;
+        left: 40px;
+        padding-bottom: 15px;
+    }
+    .history-list .history-name h3{
+        position: relative;
+        padding-bottom: 5px;
+        /* left: 40px; */
+      }
+    .history-name #deletebtn {
+        top: 17px;
+        right: 5px;
+    }
+    #historyname{
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+    .history-name #deletebtn{
+        scale: .7;
+    }
+    .history-section #bottom .history-list {
+        width: calc(100% - 20px);
+        margin: 24px 0;
+    }
+    .Cardheading{
+        padding: 20px 5px;
+        flex-direction: column;
+    }
+    #cardsdelete{
+        margin-top: 20px;
+    }
+    .Cardheading .createbtn{
+        top: 15px;
+    }
+}

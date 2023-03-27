@@ -1,0 +1,584 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* ---------USED IN ALL CSS--------- */
+
+.btn {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.btn a {
+  color: rgb(255, 85, 85);
+  border: 2px solid rgb(255, 85, 85);
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+}
+.sbtn{
+  border: none;
+  color: #2c363c;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 5px;
+}
+.sbtn:hover{
+  background-color: #2c363c;
+  color: white;
+}
+.btn a:hover {
+  background-color: rgb(255, 53, 53);
+  border: 2px solid rgb(255, 53, 53);
+  color: white;
+}
+
+/* ---------USED IN ALL CSS COMPLETED--------- */
+.bucket{
+  /* border: 1px solid red; */
+  margin: 10px;
+  cursor: pointer;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+}
+
+/* ----------- NAVBAR CHALU ----------- */
+/* header{
+  position: relative;
+  z-index: 10;
+} */
+.navbar{
+  /* position: fixed; */
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  padding: 16px 32px;
+  display: inline-flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: center;
+  background-color: #2c363c;
+  z-index: 10;
+}
+
+.navbar .logo{
+  position: absolute;
+  /* border: 2px solid violet; */
+  left: 40px;    
+}
+.navbar .logo a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.navbar ul{
+  height: 80px;
+  /* border: 2px solid green; */
+  display: inline-flex;
+  align-items: center;
+}
+.navbar ul li {
+  padding: 10px 32px;
+  list-style: none;
+  margin: 0 8px;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+.navbar ul li:hover{
+  background-color: #39464e;
+}
+.navbar ul li:active{
+  background-color: #414f57;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+.navbar .logbtn{
+  position: absolute;
+  display: grid;
+  place-items: center;
+  right: 40px;
+  /* width: 110px;
+  height: 38px; */
+  /* border: 3px solid rgb(255, 85, 85);  */
+  cursor: pointer;
+  color: white;
+}
+
+.navbar .logbtn a{
+  border: 2px solid rgb(255, 85, 85); 
+  text-decoration: none;
+  color: rgb(255, 85, 85);
+  transition: all .25s ease-in-out;
+  padding: 10px 24px;
+  letter-spacing: 1px;
+}
+.navbar .logbtn a:hover{
+  background-color: rgb(255, 53, 53);
+  border: 2px solid rgb(255, 53, 53); 
+  color: white;
+}
+/* --------HOME SECTION CHALU----------- */
+
+.hero-section {
+  position: relative;
+  top: 20px;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
+
+.hero-section .text {
+  /* border: 2px solid blue; */
+  text-align: center;
+  max-width: 800px;
+  padding: 16px;
+}
+
+.hero-section .text h3 {
+  font-size: 3.5rem;
+}
+
+.hero-section .text h3>span {
+  color: #2c363c;
+}
+
+.hero-section .text #tagline {
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: monospace;
+  padding-top: 8px;
+}
+
+.hero-section .text #desc {
+  font-size: 1rem;
+  padding: 16px 32px;
+}
+
+.hero-section #trybtn {
+  margin-top: 32px;
+}
+
+.hero-section #trybtn a {
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 3px solid #2c363c;
+  color: #2c363c;
+  font-weight: 600;
+}
+
+.hero-section #trybtn a:hover {
+  color: white;
+  background-color: #2c363c;
+
+}
+
+/* --------HOME SECTION COMPLETED----------- */
+
+/* --------BUCKETS SECTION CHALU----------- */
+
+
+.bucket-section {
+  position: relative;
+  top: 0px;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.bucket-section #buckettop {
+  position: relative;
+  border-bottom: 2px solid #2c363c;
+  display: flex;
+  padding: 40px;
+}
+
+.bucket-section #buckettop h1 {
+  font-size: 2rem;
+}
+
+.bucket-section #buckettop #createbtn {
+  position: absolute;
+  right: 40px;
+}
+
+.bucket-section #buckettop #createbtn a {
+  border: none;
+  color: #2c363c;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+}
+
+.bucket-section #buckettop #createbtn a:hover {
+  background-color: #2c363c;
+  color: white;
+}
+
+.bucket-section #bottom {
+  position: relative;
+  /* border: 2px solid red; */
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.bucket-section #bottom .bucket-list {
+  /* border: 2px solid violet; */
+  margin-top: 24px;
+  width: calc(100% - 100px);
+}
+
+.bucket-section #bottom .bucket-list .bucket-name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 80px;
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  background-color: #b9d0dd;
+}
+
+.bucket-name #deletebtn {
+  position: absolute;
+  right: 40px;
+}
+
+
+/* --------BUCKETS SECTION COMPLETED----------- */
+
+/* --------FORM SECTION CHALU----------- */
+
+.cover {
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
+  top: 0;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 500px;
+  height: 150px;
+  /* border: 2px solid red; */
+}
+
+.form .top {
+  position: static;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #2c363c;
+  color: white;
+  z-index: 5;
+}
+
+.form .top h4 {
+  position: absolute;
+  left: 20px;
+  letter-spacing: 1px;
+}
+
+.form .top #crossbtn {
+  position: absolute;
+  right: 20px;
+}
+
+.form .top #crossbtn a {
+  border: none;
+  color: white;
+  padding: 4px 5px;
+  display: grid;
+  place-items: center;
+  background-color: #444e55;
+
+}
+
+.form .top #crossbtn a i {
+  transform: rotate(45deg);
+}
+
+
+.form .bottom {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #5c8faf;
+  color: white;
+}
+
+.form .bottom .input {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 2px solid green; */
+  /* padding:8px; */
+}
+
+.form .bottom input {
+  background-color: #444e558f;
+  position: relative;
+  font-size: 20px;
+  width: 100%;
+  padding: 8px 40px 8px 16px;
+  outline: none;
+  /* background-color: transparent; */
+  border: 3px solid #2c363c;
+  border-right: none;
+  color: white;
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+.form .bottom #createbtn {
+  position: relative;
+  right: 0px;
+}
+
+.form .bottom #createbtn a {
+  height: 44px;
+  color: #2c363c;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+}
+.form .bottom #createbtn button {
+  height: 44px;
+  color: #2c363c;
+  background-color: transparent;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+}
+
+.form .bottom #createbtn button:hover {
+  background-color: #2c363c;
+  color: white;
+}
+
+/* --------FORM SECTION COMPLETED----------- */
+
+/* --------HISTORY SECTION CHALU----------- */
+.history-section {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.history-section #historytop {
+  position: relative;
+  border-bottom: 2px solid #2c363c;
+  display: flex;
+  padding: 40px;
+}
+
+.history-section #historytop h1 {
+  font-size: 2rem;
+}
+
+.history-section #historytop #createbtn {
+  position: absolute;
+  right: 40px;
+}
+
+.history-section #historytop #createbtn a {
+  border: none;
+  color: #2c363c;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+}
+
+.history-section #historytop #createbtn a:hover {
+  background-color: #2c363c;
+  color: white;
+}
+
+.history-section #bottom {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.history-section #bottom .history-list {
+  width: calc(100% - 100px);
+  margin: 24px 0;
+}
+
+.history-section #bottom .history-list .history-name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  background-color: #b9d0dd;
+  box-shadow: 0 5px 40px #b9d0dd;
+}
+
+.history-name #deletebtn {
+  position: absolute;
+  right: 40px;
+  
+}
+
+.history-list .history-name h3{
+  position: absolute;
+  left: 40px;
+}
+
+.history-list .history-name .link{
+  position: relative;
+}
+
+.history-list .history-name .time{
+  position: absolute;
+  left: 40px;
+  bottom: 4px;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+
+
+/* --------HISTORY SECTION COMPLETED----------- */
+
+/* --------Card SECTION CHALU-------- */
+
+.Card-list{
+  /* border: 2px solid red; */
+  padding: 20px;
+  /* margin: 10px; */
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.specificCard{
+  /* background-color: black; */
+  /* border: 2px solid black; */
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.273);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 300px;
+  /* padding: 10px; */
+  transition: all .5s;
+}
+.specificCard:hover{
+  box-shadow: 1px 2px 10px 2px #2c363c; 
+  scale: 1.02;
+}
+.specificCard .cbtns{
+  /* position:absolute; */
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 10px;
+  background-color:#2c363c;
+  padding: 10px;
+  justify-content: end;
+
+}
+.Cardheading{
+  position: relative;
+  border-bottom: 2px solid #2c363c;
+  display: flex;
+  padding: 40px;
+}
+.Cardheading h1{
+  font-size: 2rem;
+}
+.Cardheading .createbtn{
+  position: absolute;
+  right: 40px;
+}
+.Cardheading .createbtn a{
+  border: none;
+  color: #2c363c;
+  border: 3px solid #2c363c;
+  font-weight: bold;
+}
+.Cardheading .createbtn a:hover {
+  background-color: #2c363c;
+  color: white;
+}
+.cIframe{
+  margin-bottom: 10px;
+}
+.cplinkpart{
+  padding: 10px;
+  overflow: hidden;
+}
+.cplinkpart:hover a{
+  /* background-color: #2c363c; */
+  color: black;
+}
+.blist{
+  background-color: #2c363c;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.blist:hover{
+  background-color: #2c363ca5;
+}
+.navgatecards:hover{
+  scale: 1.3;
+}
